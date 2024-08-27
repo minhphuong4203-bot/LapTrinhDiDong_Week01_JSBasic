@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console. Try it with both test datasets.
+
+        function printForecast(arr) {
+            let str = "";
+            for (let i = 0; i < arr.length; i++) {
+                str += `${arr[i]}°C in ${i + 1} days ... `;
+            }
+            console.log("... " + str);
+        }
+
+//         Use the problem-solving framework: Understand the problem and break it up into sub-problems!
+        console.log("---- TEST DATA 1 ----");
+        printForecast([17, 21, 23]);
+
+        console.log("---- TEST DATA 2 ----");
+        printForecast([12, 5, -5, 0, 4]);
+
+    </script>
+</body>
+</html>
